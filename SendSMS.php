@@ -16,8 +16,8 @@
 		if ($time == '21:00:00 pm' && $time == '21:10:00 pm') {
 				
 			//code of sms
-			$senderName='+250785389000';
-			$phone='+250787943106';
+			$senderName='SenderName';
+			$phone='RecipientNumber';
 			$data=array(
 			        "sender"=>$senderName,
 			        "recipients"=>$phone,
@@ -26,8 +26,8 @@
 
 			$url="https://www.intouchsms.co.rw/api/sendsms/.json";
 			$data=http_build_query($data);
-			$username="IndexZero";
-			$password="bugarama123@";
+			$username="Username";
+			$password="Password";
 
 	        $ch=curl_init();
 	        curl_setopt($ch,CURLOPT_URL,$url);
@@ -62,8 +62,8 @@
 			if ($time == $Task_time) {
 				
 				//code of sms
-		        $senderName='+250785389000';
-		        $phone='+250734392541';
+		        $senderName='sendername';
+		        $phone='RecipientNumber';
 		        $data=array(
 		                    "sender"=>$senderName,
 		                    "recipients"=>$phone,
@@ -72,8 +72,8 @@
 
 		          $url="https://www.intouchsms.co.rw/api/sendsms/.json";
 		          $data=http_build_query($data);
-		          $username="IndexZero";
-		          $password="bugarama123@";
+		          $username="Username";
+		          $password="Password";
 
 		          $ch=curl_init();
 		          curl_setopt($ch,CURLOPT_URL,$url);
